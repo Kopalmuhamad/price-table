@@ -1,0 +1,153 @@
+:root {
+  --font-first: "Explora", cursive;
+  --font-second: "Poppins", sans-serif;
+  --font-third: "Public Sans", sans-serif;
+  --font-four: "Roboto", sans-serif;
+  --color-first: #393e41;
+  --color-second: #e94f37;
+  --color-third: #f6f7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.f-container {
+  background-color: var(--color-first);
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* ToDo Pricing Plan */
+.container {
+  padding: 30px 50px;
+}
+
+.pricing-table {
+}
+
+.pricing-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #f6f7eb;
+  border-radius: 25px;
+}
+
+.box {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 50px;
+  gap: 30px;
+}
+
+.box .wrapper-img {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box .wrapper-img .img-offer {
+  width: 100%;
+}
+
+.box .wrapper-img .title-offer {
+  font-family: var(--font-second);
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.416);
+  text-transform: uppercase;
+}
+
+.box .description-offer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  font-family: var(--font-second);
+}
+
+.box .description-offer .text-offer {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px;
+  border-bottom: 1px solid #000;
+}
+
+.box .description-offer .price {
+  text-transform: uppercase;
+}
+
+.box .description-offer a {
+  padding: 15px 70px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  outline: none;
+  background-color: var(--color-third);
+  cursor: pointer;
+}
+
+.box .description-offer a:active {
+  background: #dbdbdb;
+}
+
+.box .description-offer a .btn-sign-up {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+@media (max-width: 950px) {
+  .pricing-plan {
+    flex-direction: column;
+  }
+  .box {
+    width: 75%;
+    border-bottom: 1px solid #000;
+  }
+}
+
+@media (max-width: 520px) {
+  .box .wrapper-img .title-offer {
+    font-size: 1em;
+  }
+  .box .description-offer .text-offer {
+    font-size: 0.8em;
+  }
+  .box .description-offer a {
+    padding: 5px 70px;
+  }
+}
+
+@media (max-width: 420px) {
+  .box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .container {
+    padding: 30px 5px;
+  }
+  .box .description-offer a {
+    padding: 13px 70px;
+  }
+}
+
+@media (max-width: 302px) {
+  .box .description-offer a {
+    padding: 5px 70px;
+}
+}
+
